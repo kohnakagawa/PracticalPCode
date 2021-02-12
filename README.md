@@ -6,7 +6,7 @@ P-Code is an intermediate representation used in Ghidra to describe the behavior
 During the decompilation process, Ghidra converts machine code into P-Code, applies various optimizations, performs control flow structuring, and finally emits pseudo-C source code.
 The most important point here is that analysis can be made processor-independent by describing processor behavior with a common intermediate representation. This enables the support of the Ghidra decompilation for various processors.
 
-The use of intermediate representations is also attractive for reverse engineers because it enables a processor-independent analysis (for example, [Alexei Bluazel's excellent article](https://www.riverloopsecurity.com/blog/2019/05/pcode/) shows the data-flow analysis using P-Code). However, to my best of knowledge, there few examples to utilize the P-Code.
+The use of intermediate representations is also attractive for reverse engineers because it enables a processor-independent analysis (for example, [Alexei Bluazel's excellent article](https://www.riverloopsecurity.com/blog/2019/05/pcode/) shows the data-flow analysis using P-Code). However, to my best of knowledge, there are few examples to utilize the P-Code for automating reverse-engineering tasks.
 
 This repository gathers the practical P-Code examples. I'm currently exploring the possibilities of P-Code, so there are just a few of the use cases here. If you know other interesting use-cases, pull-requests are welcome.
 
@@ -51,7 +51,7 @@ The [ModifyDecompileResultFromFunctionName.java](./ghidra_scripts/ModifyDecompil
 
 ### [ModifyDecompileResultFromApiHash.java](./ghidra_scripts/ModifyDecompileResultFromApiHash.java)
 
-The second example is similar to the first example, but API is resolved dynamically through API hash values, not API names. This technique is used by malware (e.g., [EMOTET](https://www.netscout.com/blog/asert/emotet-whats-changed)) to obfuscate the APIs to use. Here is a code snippet of [sample code](https://github.com/kohnakagawa/PracticalPCode/blob/main/SampleCode/ResolveByAPIHash/Main.c#L196-L217) to illustrate this.
+The second example is similar to the first example, but APIs are resolved dynamically through API hash values, not API names. This technique is used by malware (e.g., [EMOTET](https://www.netscout.com/blog/asert/emotet-whats-changed)) to obfuscate the APIs to use. Here is a code snippet of [sample code](https://github.com/kohnakagawa/PracticalPCode/blob/main/SampleCode/ResolveByAPIHash/Main.c#L196-L217) to illustrate this.
 
 ```c
 #define USER32_DLL_HASH 0x1031956f
