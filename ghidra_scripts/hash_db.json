@@ -1,0 +1,42 @@
+[
+  {
+    "name": "user32.dll",
+    "hash": 271684975
+  },
+  {
+    "name": "MessageBoxA",
+    "hash": 356901485
+  },
+  {
+    "name": "ntdll.dll",
+    "hash": 3751111590
+  },
+  {
+    "name": "NtAllocateVirtualMemory",
+    "hash": 2609387939
+  },
+  {
+    "name": "NtFlushInstructionCache",
+    "hash": 1438816864
+  },
+  {
+    "name": "LdrLoadDll",
+    "hash": 2133165252
+  },
+  {
+    "name": "RtlUnicodeStringToAnsiString",
+    "hash": 3988010069
+  },
+  {
+    "name": "RtlAnsiStringToUnicodeString",
+    "hash": 474962788
+  },
+  {
+    "name": "RtlInitAnsiString",
+    "hash": 1105978905
+  },
+  {
+    "name": "RtlFreeUnicodeString",
+    "hash": 22365590
+  }
+]
